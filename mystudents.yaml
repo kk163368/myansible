@@ -1,0 +1,22 @@
+---
+- students:
+  - name: Anil
+    phoneno: 999987736688
+    address: 
+       doorno: 55
+       streetno: 2
+       pincode: 500072
+
+  - name: sunil
+    phoneno: 9836637736663
+    address: 
+      doorno: 55
+      streetno: 2
+      pincode: 500072
+
+  - name: venil
+    phoneno: 67266378883838
+    address: 
+     doorno: 55
+     streetno: 2
+     pincode: 500072
