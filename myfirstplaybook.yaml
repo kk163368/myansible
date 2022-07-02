@@ -1,6 +1,7 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks:
   - name: want to install tree
     apt:
@@ -18,5 +19,5 @@
       state: present
 
 
-      
+
  
