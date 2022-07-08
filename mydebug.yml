@@ -12,3 +12,16 @@
   - name: i want to disply first tasks result
     debug:
       msg: "{{myfirsttaskresult}}"
+
+
+  - name: install git
+    apt:
+      name: git
+      state: present
+    when: myfirsttaskresult.stderr==""
+
+  - name: install trees
+    apt:
+      name: tree
+      state: present
+    when: myfirsttaskresult.stderr!=""
