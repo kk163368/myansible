@@ -18,9 +18,16 @@
     template: 
       src: myindex.j2
       dest: /var/www/html/index.html
+    notify: restartwebserver
 
   - name: download internet file
     get_url:
        url: https://blog.tucktools.com
        dest: /home/ubuntu/
        force_basic_auth: yes
+
+  handlers:
+  - name: restartwebserver
+    service:
+      name: apache2
+      state: restarted
